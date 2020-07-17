@@ -35,6 +35,9 @@ ul {
   left: 38%;
   color: #8d8d8d;
 }
+#nav-element a:hover {
+  color: black;
+}
 #nav-element li {
   position: relative;
   display: flex;
@@ -50,9 +53,15 @@ ul {
   opacity: 1;
   display: inline;
 }
+/* responsive */
+
 #home a {
   color: #000000;
 }
+.navbar .icon-2x {
+  display: none;
+}
+
 .shop {
   position: relative;
   top: 4px;
@@ -68,7 +77,7 @@ ul {
   margin-right: 20%;
 }
 .body-element {
-  height: 600px;
+  height: 640px;
 }
 .main-text {
   text-align: left;
@@ -156,10 +165,11 @@ input::placeholder {
 }
 .chef {
   position: relative;
-  margin-top: 28px;
-  height: 500px;
+  top: 110px;
+  height: 470px;
   width: 100%;
 }
+
 .welcome {
   text-align: left;
   font-weight: 300;
@@ -261,7 +271,7 @@ a {
   /* display: flex;
   align-items: center;
   justify-content: center; */
-  height: 345px;
+  height: 385px;
   border-radius: 5px;
 
   background-color: #f8fbf5;
@@ -305,7 +315,7 @@ a {
   float: right;
 }
 .leaf3 {
-  left: 20%;
+  left: 8%;
   width: 10%;
 }
 .leaf4 {
@@ -336,7 +346,7 @@ a {
 
 .food {
   /* border: 1px solid red; */
-  height: 380px;
+  height: 430px;
 }
 .breakfast-list a {
   position: relative;
@@ -414,7 +424,7 @@ li .list-yellow {
 .shop-div {
   display: flex;
   align-items: center;
-  justify-items: center;
+  justify-content: center;
   position: absolute;
   margin-top: -135px;
   margin-left: 8%;
@@ -427,7 +437,7 @@ li .list-yellow {
 .heart-div {
   display: flex;
   align-items: center;
-  justify-items: center;
+  justify-content: center;
   position: absolute;
   margin-top: -135px;
   margin-left: 13%;
@@ -627,17 +637,17 @@ p {
   font-weight: 500;
   line-height: 24px;
   font-size: 14px;
-  width: 100%;
+  width: 70%;
   left: 29%;
   top: -47px;
 }
-.leaf5{
+.leaf5 {
   position: relative;
-  width: 9%;
+  width: 6%;
   top: 100px;
   display: flex;
   float: right;
-  left: 20%;
+  left: 10%;
 }
 .news {
   position: relative;
@@ -747,7 +757,7 @@ p {
   display: grid;
   margin-left: 20%;
   margin-right: 20%;
-  grid-template-columns: 31% 23% 23% 23%;
+  grid-template-columns: 35% 22% 22% 22%;
 }
 .foot {
   /* border: 1px solid red; */
@@ -764,7 +774,7 @@ p {
   line-height: 20px;
 
   font-size: 20px;
-  width: 100%;
+  width: 90%;
 }
 .foot-logo {
   position: relative;
@@ -799,14 +809,14 @@ button {
   font-weight: 600;
   line-height: 48px;
 }
-.foot-link a{
-   font-family: "Josefin Sans", "sans-serif";
-color: #585858;
+.foot-link a {
+  font-family: "Josefin Sans", "sans-serif";
+  color: #585858;
   font-weight: 400;
+  font-size: 13px;
   line-height: 48px;
-
 }
-.leaf6{
+.leaf6 {
   position: relative;
   width: 9%;
   top: -80px;
@@ -814,22 +824,436 @@ color: #585858;
   float: right;
   left: 10%;
 }
-.leaf7{
+.leaf7 {
   position: relative;
   width: 9%;
   top: -300px;
-  
+
   left: -150px;
 }
-.leaf8,.leaf9{
- 
+.leaf8,
+.leaf9 {
   position: absolute;
   width: 9%;
- top: 220px;
+  top: 220px;
 }
-.leaf9{
+.leaf9 {
   display: flex;
   float: right;
-  left: 80%;
+  left: 90%;
+}
+@media only screen and (max-width: 1850px) {
+  .main-text {
+    font-size: 60px;
+  }
+  .nav-bar,
+  .main-body,
+  .reason,
+  .browse,
+  .history,
+  .testimonial,
+  .news,
+  .subscription,
+  .footer-wrapper {
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+}
+@media only screen and (max-width: 1450px) {
+  .nav-bar,
+  .main-body,
+  .reason,
+  .browse,
+  .history,
+  .testimonial,
+  .news,
+  .subscription,
+  .footer-wrapper {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .testimonial-wrapper {
+    grid-template-columns: 35% 35% 37%;
+  }
+  .leaf7 {
+    left: -100px;
+  }
+}
+@media only screen and (max-width: 1150px) {
+  .img-icon {
+    width: 29%;
+  }
+  .main-text {
+    font-size: 49px;
+  }
+  .shop {
+    width: 3.5%;
+  }
+  .chef {
+    height: 422px;
+  }
+  .welcome-sub {
+    font-size: 14px;
+  }
+  .welcome-figo {
+    font-size: 35px;
+  }
+  .btn-second {
+    margin-top: 18px;
+    width: 45%;
+  }
+  .news-wrapper {
+    grid-template-columns: 33% 33% 33%;
+  }
+  .heart-div,
+  .shop-div {
+    margin-top: -100px;
+    width: 4.5%;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .nav-bar,
+  .main-body,
+  .reason,
+  .browse,
+  .history,
+  .testimonial,
+  .news,
+  .subscription,
+  .footer-wrapper {
+    margin-left: 8%;
+    margin-right: 8%;
+  }
+  #nav-element li {
+    font-size: 18px;
+
+    padding: 1.5%;
+  }
+  .main-text {
+    font-size: 40px;
+  }
+  .sub-text {
+    margin-top: 14px;
+    font-size: 16px;
+  }
+  .btn {
+    left: 2%;
+    width: 36%;
+  }
+  .body-element {
+    height: 493px;
+  }
+  .chef {
+    height: 386px;
+    top: 173px;
+  }
+  .btn-second,
+  .btn-third {
+    width: 45%;
+  }
+  .reason-head {
+    font-size: 20px;
+  }
+  .reason-sub,
+  .history-detail {
+    font-size: 16px;
+  }
+  .burger {
+    width: 100%;
+    position: relative;
+    top: 110px;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .main-body {
+    top: 150px;
+  }
+  .main-text {
+    font-size: 34px;
+  }
+  .img-icon {
+    width: 38%;
+  }
+  #nav-element li {
+    position: relative;
+    left: -100px;
+  }
+  .shop {
+    width: 4.5%;
+  }
+  input::placeholder {
+    left: 5%;
+
+    font-size: 14px;
+  }
+  .btn-text {
+    text-align: left;
+    font-weight: 500;
+    font-size: 12px;
+  }
+  .sub-text {
+    font-size: 13px;
+  }
+  .heart-div,
+  .shop-div {
+    margin-top: -90px;
+    width: 5%;
+
+    height: 30px;
+  }
+
+  .welcome-figo {
+    font-size: 27px;
+  }
+  .welcome-sub {
+    font-size: 13px;
+
+    line-height: 30px;
+  }
+  .btn-second,
+  .btn-third {
+    width: 52%;
+  }
+  .chef {
+    height: 343px;
+    top: 259px;
+  }
+  .reason-sub,
+  .history-detail {
+    font-size: 13px;
+  }
+  .reason-head {
+    font-size: 16px;
+  }
+  .des-sub {
+    font-size: 13px;
+  }
+  .des-head {
+    font-size: 20px;
+  }
+  .des-read a {
+    font-size: 13px;
+  }
+  #subscribe {
+    width: 54%;
+  }
+  .p-text {
+    font-size: 12px;
+  }
+  .testimonial {
+    position: relative;
+    top: 234px;
+  }
+  .history {
+    grid-template-columns: 60% 40%;
+    top: 142px;
+    /* height: 783px; */
+  }
+  .name,
+  .position {
+    top: -35px;
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .main-body {
+    display: block;
+    position: relative;
+  }
+  .main-text {
+    text-align: center;
+    position: relative;
+
+    font-size: 38px;
+  }
+  .welcome {
+    font-size: 35px;
+    margin-top: -700px;
+  }
+  .chef {
+    width: 90%;
+    left: 5%;
+    height: 361px;
+    top: 370px;
+  }
+
+  .pizza {
+    width: 100%;
+    position: relative;
+    top: -150px;
+  }
+  .body-element {
+    height: 540px;
+  }
+  .reason {
+    top: 515px;
+  }
+  .reason-wrapper {
+    display: block;
+  }
+  .browse {
+    top: 500px;
+  }
+  .choose-wrapper {
+    grid-template-columns: 48% 48%;
+    grid-gap: 4%;
+  }
+  .browse {
+    height: 1538px;
+  }
+  .history {
+    display: block;
+
+    height: 1198px;
+  }
+  .burger {
+    width: 100%;
+    position: relative;
+    top: 110px;
+    left: -77px;
+  }
+  .testimonial-wrapper {
+    display: block;
+  }
+  .test1,
+  .test2,
+  .test3,
+  .test4,
+  .test5 {
+    position: relative;
+    left: 5%;
+    top: 0px;
+  }
+  .testimonial {
+    height: 1368px;
+  }
+  .news-wrapper {
+    display: block;
+  }
+  .newsDes {
+    height: 486px;
+  }
+  .news {
+    height: 1711px;
+  }
+  .footer-wrapper {
+    grid-template-columns: 33% 33% 33%;
+  }
+
+  .foot-1 {
+    grid-column: 1/4;
+    grid-row: 2;
+  }
+  .foot-2,
+  .foot-3,
+  .foot-4 {
+    height: 250px;
+  }
+  .img-icon {
+    width: 50%;
+  }
+  .rect-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .shop-div,
+  .heart-div {
+    margin-top: -100px;
+    margin-left: 15%;
+
+    width: 8%;
+    height: 40px;
+  }
+  .heart-div {
+    margin-left: 25%;
+  }
+  .navbar a {
+    display: none;
+  }
+  .navbar a.icon-2x {
+    color: #2c3722;
+    position: relative;
+    top: -10px;
+
+    float: right;
+    display: block;
+  }
+  .navbar.responsive {
+    position: relative;
+  }
+  .navbar.responsive a.icon-2x {
+    position: absolute;
+
+    right: 0;
+    top: 0;
+  }
+  .navbar.responsive a {
+    float: none;
+    display: block;
+
+    text-align: left;
+  }
+}
+@media only screen and (max-width: 500px){
+  .img-icon {
+    width: 83%;
+}
+.main-text {
+   
+    font-size: 30px;
+}
+.pizza {
+    width: 100%;
+    position: relative;
+    top: -50px;
+}
+.welcome {
+    font-size: 35px;
+    margin-top: -785px;
+}
+.chef {
+    width: 90%;
+    left: 5%;
+    height: 271px;
+
+}
+.why-choose, .history-sub, .sub-testimonials, .news-sub, .sub-sub {
+  
+    font-size: 30px;
+    
+}
+.reason {
+    top: 550px;
+    height: 1340px;
+}
+.browse {
+    top: 596px;
+    height: 1630px;
+}
+.history {
+    grid-template-columns: 60% 40%;
+    top: 242px;
+}
+.burger {
+   
+    left: -49px;
+}
+.testimonial {
+   
+    top: 139px;
+}
+#subscribe {
+    width: 100%;
+}
+.arrow-wrap {
+    position: relative;
+    left: 84%;
+}
+.leaf2, .leaf3 {
+   
+    left: -21px;
+  
+}
 
 }

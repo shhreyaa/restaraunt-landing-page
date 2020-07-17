@@ -31,7 +31,7 @@
           <div class="navbar">
             <img src="/images/icon.png" alt="icon" class="img-icon" />
           </div>
-          <div class="navbar">
+          <div class="navbar" id="navbar">
             <ul id="nav-element">
               <li class="nav-item item1" id="home"><a href="#">Home</a></li>
               <li class="nav-item item2" id="menu"><a href="#">Menu</a></li>
@@ -51,6 +51,14 @@
                 /></a>
               </li>
             </ul>
+
+            <a
+              href="javascript:void(0);"
+              class="icon-2x"
+              onclick="myFunction()"
+            >
+            <i class="fa fa-bars"></i>
+            </a>
           </div>
         </div>
       </nav>
@@ -420,9 +428,8 @@
         </div>
       </div>
     </div>
-     
+
     <div class="subscription" id="subscription">
-    
       <div class="sub-head" id="sub-head">Subscription</div>
       <div class="sub-sub" id="sub-sub">Want to get update?</div>
       <div class="sub-des">
@@ -441,10 +448,10 @@
       <img src="/images/leaf6.png" alt="leaf" class="leaf6" id="leaf6" />
       <img src="/images/leaf7.png" alt="leaf" class="leaf7" id="leaf7" />
     </div>
-   
+
     <footer class="footer">
       <img src="/images/leaf8.png" alt="leaf" class="leaf8" id="leaf8" />
-        <img src="/images/leaf9.png" alt="leaf" class="leaf9" id="leaf9" />
+      <img src="/images/leaf9.png" alt="leaf" class="leaf9" id="leaf9" />
       <div class="footer-wrapper">
         <div class="foot foot-1" id="foot1">
           <img
@@ -479,23 +486,32 @@
           </ul>
         </div>
         <div class="foot foot-3" id="foot3">
-        <div class="foot-heads">Links</div>
-        <ul class="foot-link" id="links-link">
-          <li><a href="#" id="about">About Us</a></li>
-          <li><a href="#" id="links">Links</a></li>
-          <li><a href="#" id="privacy">Privacy Policy</a></li>
-        </ul>
+          <div class="foot-heads">Links</div>
+          <ul class="foot-link" id="links-link">
+            <li><a href="#" id="about">About Us</a></li>
+            <li><a href="#" id="links">Links</a></li>
+            <li><a href="#" id="privacy">Privacy Policy</a></li>
+          </ul>
         </div>
         <div class="foot foot-4" id="foot4">
           <div class="foot-heads">Contact</div>
           <ul class="foot-link" id="contact-link">
             <li><a href="#" id="phone">+8801622010442</a></li>
-            <li><a href="#" id="email">info@restaurant.com</a></li>
+            <li><a href="#" id="foot-email">info@restaurant.com</a></li>
             <li><a href="#" id="place">Daudkandi, Comilla</a></li>
           </ul>
-          </div>
         </div>
       </div>
     </footer>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("navbar");
+        if (x.className === "navbar") {
+          x.className += " responsive";
+        } else {
+          x.className = "navbar";
+        }
+      }
+    </script>
   </body>
 </html>
