@@ -89,6 +89,19 @@ ul {
   color: #2c3722;
   opacity: 1;
 }
+#validity,#valid{
+  text-align: center;
+  font-weight: 600;
+  font-size: 15px;
+  font-family: "Josefin Sans", "sans-serif";
+  line-height: 25px;
+  letter-spacing: 0px;
+  color: red;
+  opacity: 1;
+}
+#validity{
+  text-align: left;
+}
 .sub-text {
   text-align: left;
   position: relative;
@@ -364,7 +377,7 @@ a {
 .ft {
   box-shadow: 0px 10px 25px #00000012;
 }
-#breakfast {
+#yellow {
   border-left: 3px solid #febd00;
 }
 
@@ -842,6 +855,50 @@ button {
   float: right;
   left: 90%;
 }
+/* for stars */
+.container{
+	width:10%;
+	margin:0x auto;
+	text-align:center;
+}
+
+input[type="checkbox"]{
+	width:10%;
+	height:10%;
+	opacity:0;
+	cursor:pointer;	
+}
+label{
+	position:relative;
+	width: 10px;
+    height: 50px;
+    display: inline-block;	
+}
+.check::before, .rated::after{
+	content:'\2605';
+	font-size:30px;
+	position:absolute;
+	color:#777;
+	left:0;
+	bottom:0;
+    line-height: 50px;	
+}
+.rated::after{
+	color:orange;
+}
+.check:hover::before{
+	color:orange;
+}
+label i{
+	position:absolute;
+
+	font-size:35px;
+}
+label i.em{
+	display:none;	
+}
+
+
 @media only screen and (max-width: 1850px) {
   .main-text {
     font-size: 60px;
@@ -1256,4 +1313,6 @@ button {
   
 }
 
+
 }
+

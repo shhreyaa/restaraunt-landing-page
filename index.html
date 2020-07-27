@@ -74,15 +74,19 @@
           Quickly predominate standard compliant architecture and may have
           prospective internal or organic sources.
         </div>
+       
         <input
           type="text"
           id="email"
           name="email"
           placeholder=" Enter your Address:"
+         
         />
-        <button class="btn btn-first">
+        <button class="btn btn-first" id="btn-email">
           <span class="btn-text text1">Get started</span>
         </button>
+        <div class="for-validity" id="validity"></div>
+       
       </div>
 
       <div class="body-element partB">
@@ -178,7 +182,7 @@
         <div class="food food1">
           <ul class="breakfast-list">
             <li>
-              <a href="#" class="breakfast list-yellow" id="breakfast"
+              <a href="#" class="breakfast list-yellow" id="yellow"
                 >Breakfast</a
               >
             </li>
@@ -189,6 +193,8 @@
             <li><a href="#" class="drinks">Drinks</a></li>
           </ul>
         </div>
+   
+
         <div class="food ft food2">
           <img
             src="/images/bbq.png"
@@ -204,6 +210,22 @@
             <i class="far fa-star" style="color: #ffb243;"></i>
             <i class="far fa-star" style="color: #ffb243;"></i>
           </div>
+   
+    <!-- <div class="container">
+      <div class="smileybox">
+       
+        <label for="r1" class="check"><input type="checkbox" id="r1" onchange="ratingStar(event)" /><i
+            class="em em-weary"></i></label>
+        <label for="r2" class="check"><input type="checkbox" id="r2" onchange="ratingStar(event)" /><i
+            class="em em-worried"></i></label>
+        <label for="r3" class="check"><input type="checkbox" id="r3" onchange="ratingStar(event)" /><i
+            class="em em-blush"></i></label>
+        <label for="r4" class="check"><input type="checkbox" id="r4" onchange="ratingStar(event)" /><i
+            class="em em-smiley"></i></label>
+        <label for="r5" class="check"><input type="checkbox" id="r5" onchange="ratingStar(event)" /><i
+            class="em em-sunglasses"></i></label>
+      </div>
+    </div> -->
           <span class="list-price">$100</span>
           <span class="discount-price">20</span>
         </div>
@@ -215,6 +237,7 @@
               class="process-food clicked"
               id="chicken"
             />
+            <div class="icon-click">
             <a href="#">
               <div class="rect heart-div">
                 <i class="far fa-heart" id="fa-heart"></i>
@@ -225,6 +248,7 @@
                 <i class="fas fa-shopping-bag"></i>
               </div>
             </a>
+            </div>
           </div>
           <div class="list-heading">Western Sunrise</div>
           <div class="stars" id="stars2">
@@ -439,11 +463,12 @@
           name="email"
           placeholder=" Enter your Address:"
         />
-        <div class="arrow-wrap">
+        <div class="arrow-wrap" id="sub">
           <a href="">
             <i class="fas fa-arrow-right"></i>
           </a>
         </div>
+        <div class="valid" id="valid"></div>
       </div>
       <img src="/images/leaf6.png" alt="leaf" class="leaf6" id="leaf6" />
       <img src="/images/leaf7.png" alt="leaf" class="leaf7" id="leaf7" />
