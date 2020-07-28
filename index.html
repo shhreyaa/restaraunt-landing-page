@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/all.css" />
+    <link rel="stylesheet" href="/css/owl.theme.default.css" />
+    <link rel="stylesheet" href="/css/owl.theme.default.min.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400;500;600;700&display=swap"
       rel="stylesheet"
@@ -178,8 +180,10 @@
       <div class="reason-heading" id="browse-heading">Browse</div>
       <div class="why-choose" id="explore">Expore Our Menu</div>
       <img src="/images/leaf3.png" alt="leaf" class="leaf3" id="leaf3" />
+      
+      <div class="wrapper">
       <div class="choose-wrapper">
-        <div class="food food1">
+        <div class="food  item food1">
           <ul class="breakfast-list">
             <li>
               <a href="#" class="breakfast list-yellow" id="yellow"
@@ -195,46 +199,46 @@
         </div>
    
 
-        <div class="food ft food2">
+        <div class="food ft item food2 item">
           <img
             src="/images/bbq.png"
             alt="chicken"
             class="process-food"
             id="bbq"
           />
+          <div class="icon-click"></div>
           <div class="list-heading">Chicken Massala</div>
-          <div class="stars" id="stars1">
+          <!-- <div class="stars" id="stars1">
             <i class="far fa-star" style="color: #ffb243;"></i>
             <i class="far fa-star" style="color: #ffb243;"></i>
             <i class="far fa-star" style="color: #ffb243;"></i>
             <i class="far fa-star" style="color: #ffb243;"></i>
             <i class="far fa-star" style="color: #ffb243;"></i>
+          </div> -->
+          <svg style="display: none;">
+            <symbol id="star" viewBox="0 0 98 92">
+            <title>star</title>
+            <path  stroke='#ffb243' stroke-width='5' d='M49 73.5L22.55 87.406l5.05-29.453-21.398-20.86 29.573-4.296L49 6l13.225 26.797 29.573 4.297-21.4 20.86 5.052 29.452z' fill-rule='evenodd'/>
+          </svg>
+          
+          <div class="rating">
+            <a href="javascript:;" class="rating__button" href="#"><svg class="rating__star"><use xlink:href="#star"></use></svg></a>
+            <a href="javascript:;" class="rating__button" href="#"><svg class="rating__star"><use xlink:href="#star"></use></svg></a>
+            <a href="javascript:;" class="rating__button" href="#"><svg class="rating__star"><use xlink:href="#star"></use></svg></a>
+            <a href="javascript:;" class="rating__button" href="#"><svg class="rating__star"><use xlink:href="#star"></use></svg></a>
+            <a href="javascript:;" class="rating__button" href="#"><svg class="rating__star"><use xlink:href="#star"></use></svg></a>
           </div>
    
-    <!-- <div class="container">
-      <div class="smileybox">
-       
-        <label for="r1" class="check"><input type="checkbox" id="r1" onchange="ratingStar(event)" /><i
-            class="em em-weary"></i></label>
-        <label for="r2" class="check"><input type="checkbox" id="r2" onchange="ratingStar(event)" /><i
-            class="em em-worried"></i></label>
-        <label for="r3" class="check"><input type="checkbox" id="r3" onchange="ratingStar(event)" /><i
-            class="em em-blush"></i></label>
-        <label for="r4" class="check"><input type="checkbox" id="r4" onchange="ratingStar(event)" /><i
-            class="em em-smiley"></i></label>
-        <label for="r5" class="check"><input type="checkbox" id="r5" onchange="ratingStar(event)" /><i
-            class="em em-sunglasses"></i></label>
-      </div>
-    </div> -->
+  
           <span class="list-price">$100</span>
           <span class="discount-price">20</span>
         </div>
-        <div class="food ft food3 click">
+        <div class="food ft item food3 click">
           <div class="food-icon">
             <img
               src="/images/chicken.png"
               alt="chicken"
-              class="process-food clicked"
+              class="process-food"
               id="chicken"
             />
             <div class="icon-click">
@@ -251,34 +255,38 @@
             </div>
           </div>
           <div class="list-heading">Western Sunrise</div>
-          <div class="stars" id="stars2">
-            <i class="far fa-star" style="color: #ffb243;"></i>
-            <i class="far fa-star" style="color: #ffb243;"></i>
-            <i class="far fa-star" style="color: #ffb243;"></i>
-            <i class="far fa-star" style="color: #ffb243;"></i>
-            <i class="far fa-star" style="color: #ffb243;"></i>
+          
+          <div class="rating">
+            <a href="javascript:;" class="rating__button" href="#"><svg class="rating__star"><use xlink:href="#star"></use></svg></a>
+            <a href="javascript:;" class="rating__button" href="#"><svg class="rating__star"><use xlink:href="#star"></use></svg></a>
+            <a href="javascript:;" class="rating__button" href="#"><svg class="rating__star"><use xlink:href="#star"></use></svg></a>
+            <a href="javascript:;" class="rating__button" href="#"><svg class="rating__star"><use xlink:href="#star"></use></svg></a>
+            <a href="javascript:;" class="rating__button" href="#"><svg class="rating__star"><use xlink:href="#star"></use></svg></a>
           </div>
           <span class="list-price">$100</span>
           <span class="discount-price">20</span>
         </div>
-        <div class="food ft food4">
+        <div class="food ft item food4">
+
           <img
             src="/images/soup.png"
             alt="chicken"
             class="process-food"
             id="soup"
           />
+          <div class="icon-click"></div>
           <div class="list-heading">Sandwich Soup</div>
-          <div class="stars" id="stars3">
-            <i class="far fa-star" style="color: #ffb243;"></i>
-            <i class="far fa-star" style="color: #ffb243;"></i>
-            <i class="far fa-star" style="color: #ffb243;"></i>
-            <i class="far fa-star" style="color: #ffb243;"></i>
-            <i class="far fa-star" style="color: #ffb243;"></i>
+          <div class="rating">
+            <a href="javascript:;" class="rating__button" href="#"><svg class="rating__star"><use xlink:href="#star"></use></svg></a>
+            <a href="javascript:;" class="rating__button" href="#"><svg class="rating__star"><use xlink:href="#star"></use></svg></a>
+            <a href="javascript:;" class="rating__button" href="#"><svg class="rating__star"><use xlink:href="#star"></use></svg></a>
+            <a href="javascript:;" class="rating__button" href="#"><svg class="rating__star"><use xlink:href="#star"></use></svg></a>
+            <a href="javascript:;" class="rating__button" href="#"><svg class="rating__star"><use xlink:href="#star"></use></svg></a>
           </div>
           <span class="list-price">$100</span>
           <span class="discount-price">20</span>
         </div>
+        
       </div>
       <div class="arrow-wrapper">
         <span class="arrow-div aDiv1">
@@ -291,8 +299,9 @@
         </span>
       </div>
     </div>
+    </div>
     <div class="history" id="history">
-      <div class="item history-text">
+      <div class="items history-text">
         <div class="history-head" id="history-head">
           History of Figo
         </div>
@@ -312,7 +321,7 @@
           <span class="btn-text text3">Explore Our Story</span>
         </button>
       </div>
-      <div class="item history-pic">
+      <div class="items history-pic">
         <img src="/images/burger.png" alt="burger" class="burger" id="burger" />
       </div>
     </div>
@@ -529,5 +538,8 @@
       </div>
     </footer>
   <script src="/jss/script.js"></script>
+  <script src="/jss/jquery.min.js"></script>
+  <script src="/jss/owl.carousel.min.js"></script>
+  <script src="/jss/jq.js"></script>
   </body>
 </html>

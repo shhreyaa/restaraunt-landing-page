@@ -1,5 +1,6 @@
-emailBtn = document.getElementById("btn-email");
-subscribtion = document.getElementById("sub");
+const emailBtn = document.getElementById("btn-email");
+const subscribtion = document.getElementById("sub");
+
 
 //for hover in Why Choose us
 var reasonWrap = document.getElementsByClassName("reason-item");
@@ -11,6 +12,7 @@ for (var i = 0; i < reasonWrap.length; i++) {
     while (el) {
       if (el.tagName === "DIV") {
         el.classList.remove("shadow");
+      
       }
       el = el.nextSibling;
     }
@@ -21,6 +23,7 @@ for (var i = 0; i < reasonWrap.length; i++) {
 //for hover in Menu
 
 var menuWrap = document.getElementsByClassName("ft");
+var foodWrap = document.getElementsByClassName("process-food")
 for (var i = 0; i < menuWrap.length; i++) {
   menuWrap[i].onmouseover = function () {
     //remove unactive one
@@ -29,12 +32,34 @@ for (var i = 0; i < menuWrap.length; i++) {
     while (el) {
       if (el.tagName === "DIV") {
         el.classList.remove("click");
+        
+       
       }
       el = el.nextSibling;
     }
     this.classList.add("click");
+
   };
 }
+for (var i = 0; i < foodWrap.length; i++) {
+  foodWrap[i].onmouseover = function () {
+    //remove unactive one
+
+    var el = foodWrap[0];
+    while (el) {
+      console.log(el)
+      if (el.tagName === "IMG") {
+        el.classList.remove("clicked");
+       
+      }
+      el = el.nextSibling;
+    }
+    this.classList.add("clicked");
+  };
+}
+
+//for icons
+
 
 // for responsive nav-bar
 function myFunction() {
@@ -87,5 +112,4 @@ function subscribe(event) {
 emailBtn.addEventListener("click", validate);
 sub.addEventListener("click", subscribe);
 
-//star rating
 
