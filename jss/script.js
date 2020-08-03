@@ -41,22 +41,22 @@ for (var i = 0; i < menuWrap.length; i++) {
 
   };
 }
-for (var i = 0; i < foodWrap.length; i++) {
-  foodWrap[i].onmouseover = function () {
-    //remove unactive one
+// for (var i = 0; i < foodWrap.length; i++) {
+//   foodWrap[i].onmouseover = function () {
+//     //remove unactive one
 
-    var el = foodWrap[0];
-    while (el) {
-      console.log(el)
-      if (el.tagName === "IMG") {
-        el.classList.remove("clicked");
+//     var el = foodWrap[0];
+//     while (el) {
+//       console.log(el)
+//       if (el.tagName === "IMG") {
+//         el.classList.remove("clicked");
        
-      }
-      el = el.nextSibling;
-    }
-    this.classList.add("clicked");
-  };
-}
+//       }
+//       el = el.nextSibling;
+//     }
+//     this.classList.add("clicked");
+//   };
+// }
 
 //for icons
 

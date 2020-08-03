@@ -355,7 +355,7 @@ a {
   position: relative;
   margin-top: 80px;
   display: grid;
-  grid-template-columns: 20% 25% 25% 25%;
+  grid-template-columns: 20% 70%;
   grid-gap: 4%;
 }
 

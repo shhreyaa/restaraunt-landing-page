@@ -11,3 +11,29 @@ $(function(){
 	});
 	
 });
+
+width = $(window).width();
+console.log(width)
+if (width < 1000) {
+	maxSlides = 1;
+	minSlides = 1;
+} else {
+	maxSlides = 3;
+	minSlides = 3;
+}
+
+
+$(document).ready(function(){
+	$('.bxslider').bxSlider({
+	  auto: false,
+	  autoControls: false,
+	  speed: 500,
+	  slideSelector: 'div.item',
+	  minSlides: minSlides,
+	  maxSlides: maxSlides,
+	  moveSlides: 4,
+	  slideWidth: 300
+	});
+  });
+
+
