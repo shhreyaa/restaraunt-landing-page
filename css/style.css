@@ -442,23 +442,23 @@ li .list-yellow {
   justify-content: center;
   position: absolute;
   margin-top: -135px;
-  margin-left: 8%;
+  margin-left: 35%;
   background-color: white;
-
-  width: 3.5%;
+  width: 13.5%;
   height: 40px;
   border-radius: 8px;
 }
+
 .heart-div {
   display: flex;
   align-items: center;
   justify-content: center;
   position: absolute;
   margin-top: -135px;
-  margin-left: 13%;
+  margin-left: 55%;
   background-color: white;
 
-  width: 3.5%;
+  width: 13.5%;
   height: 40px;
   border-radius: 8px;
 }
