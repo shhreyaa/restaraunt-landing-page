@@ -10,16 +10,28 @@ body {
     overflow-x:hidden;
 }
 
-.nav-bar {
-  width: ;
-  display: grid;
-  position: relative;
-  grid-template-columns: 40% 60%;
-  margin-left: 20%;
-  margin-right: 20%;
 
-  top: 46px;
-  height: 100px;
+.nav-bar {
+  width: 100%;
+   background: transparent
+    linear-gradient(158deg, #f8fbf5 0%, #f9fcf7 15%, #ffffff 59%, #ffffff 100%)
+    0% 0% no-repeat padding-box;
+
+  
+  padding: 35px 20%;
+
+z-index: 3;
+  top: 0px;
+ position: fixed;
+ display: flex;
+justify-content: space-evenly;
+}
+.nav2{
+  width: 100%;
+  top: 30px;
+  margin-left: 30%;
+ justify-content: space-evenly;
+  width: 100%;
 }
 
 ul {
@@ -28,12 +40,12 @@ ul {
 
 .img-icon {
   position: relative;
-  width: 20%;
-  height: 50px;
+  width: 180%;
+ 
 }
 #nav-element a {
   position: relative;
-  left: 38%;
+ 
   color: #8d8d8d;
 }
 #nav-element a:hover {
@@ -46,7 +58,7 @@ ul {
   font-weight: 400;
   font-size: 20px;
   font-family: "Josefin Sans", "sans-serif";
-  top: 13px;
+
   padding: 2.5%;
 
   letter-spacing: 0px;
@@ -55,10 +67,20 @@ ul {
   display: inline;
 }
 /* responsive */
-
-#home a {
-  color: #000000;
+.cart{
+ position: absolute;
+ width: 100%;
+ margin: 0px 0px;
+ 
+    margin: 40px -24px;
+    font-size: 13px;
+  visibility:hidden;
 }
+#shop:hover .cart {
+visibility:visible;
+}
+
+
 .navbar .icon-2x {
   display: none;
 }
@@ -66,7 +88,7 @@ ul {
 .shop {
   position: relative;
   top: 4px;
-  width: 2.5%;
+  width: 1.75%;
 }
 .main-body {
   display: grid;
@@ -131,7 +153,7 @@ ul {
 }
 input::placeholder {
   position: relative;
-  left: 10%;
+  
   text-align: left;
   font-weight: 300;
   font-size: 17px;
@@ -141,6 +163,9 @@ input::placeholder {
   color: #b7b7b7;
   opacity: 1;
 }
+ input{
+    padding: 0px 15px;
+  }
 .btn {
   background: transparent linear-gradient(90deg, #8cb560 0%, #639d2b 100%) 0% 0%
     no-repeat padding-box;
@@ -153,6 +178,12 @@ input::placeholder {
 
   width: 25%;
   height: 50px;
+}
+//for toggle
+.active{
+  border: 5px solid red;
+background-color: white;
+color: #639d2b ;
 }
 .btn-text {
   text-align: left;
@@ -827,7 +858,7 @@ button {
   font-weight: 600;
   line-height: 48px;
 }
-.foot-link a {
+.foot-link a,.foot-link li {
   font-family: "Josefin Sans", "sans-serif";
   color: #585858;
   font-weight: 400;
@@ -908,7 +939,7 @@ label i.em {
   .main-text {
     font-size: 60px;
   }
-  .nav-bar,
+
   .main-body,
   .reason,
   .browse,
@@ -922,7 +953,7 @@ label i.em {
   }
 }
 @media only screen and (max-width: 1450px) {
-  .nav-bar,
+ 
   .main-body,
   .reason,
   .browse,
@@ -934,6 +965,15 @@ label i.em {
     margin-left: 10%;
     margin-right: 10%;
   }
+  .nav-bar {
+
+  padding: 25px 10%;
+  }
+  .nav2{
+ 
+  margin-left: 40%;
+
+}
   .testimonial-wrapper {
     grid-template-columns: 35% 35% 37%;
   }
@@ -942,9 +982,7 @@ label i.em {
   }
 }
 @media only screen and (max-width: 1150px) {
-  .img-icon {
-    width: 29%;
-  }
+ 
   .main-text {
     font-size: 49px;
   }
@@ -974,7 +1012,7 @@ label i.em {
   }
 }
 @media only screen and (max-width: 1000px) {
-  .nav-bar,
+  
   .main-body,
   .reason,
   .browse,
@@ -1033,18 +1071,17 @@ label i.em {
   .main-text {
     font-size: 34px;
   }
-  .img-icon {
-    width: 38%;
-  }
+
   #nav-element li {
     position: relative;
-    left: -100px;
+   
   }
   .shop {
     width: 4.5%;
   }
+ 
   input::placeholder {
-    left: 5%;
+    
 
     font-size: 14px;
   }
@@ -1117,7 +1154,7 @@ label i.em {
     font-size: 12px;
   }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 650px) {
   .main-body {
     display: block;
     position: relative;
@@ -1211,9 +1248,7 @@ label i.em {
   .foot-4 {
     height: 250px;
   }
-  .img-icon {
-    width: 50%;
-  }
+  
   .rect-div {
     display: flex;
     align-items: center;
@@ -1237,8 +1272,9 @@ label i.em {
     color: #2c3722;
     position: relative;
     top: -10px;
-
     float: right;
+font-size: 25px;
+margin-right: 40%;
     display: block;
   }
   .navbar.responsive {
@@ -1387,4 +1423,7 @@ label i.em {
   ~ .rating__button
   .rating__star {
   fill: #fff;
+}
+button{
+  cursor:pointer
 }

@@ -42,7 +42,7 @@
           <div class="navbar">
             <img src="/images/icon.png" alt="icon" class="img-icon" />
           </div>
-          <div class="navbar" id="navbar">
+          <div class="navbar nav2" id="navbar">
             <ul id="nav-element">
               <li class="nav-item item1" id="home"><a href="#">Home</a></li>
               <li class="nav-item item2" id="menu"><a href="#">Menu</a></li>
@@ -60,6 +60,7 @@
                     class="shop"
                     id="shop"
                 /></a>
+                <span class="cart" id="cart">Add to cart</span>
               </li>
             </ul>
 
@@ -92,7 +93,7 @@
           name="email"
           placeholder=" Enter your Address:"
         />
-        <button class="btn btn-first" id="btn-email">
+        <button class="btn btn-first" id="btn-email"  onClick="buttonClick(this)">
           <span class="btn-text text1">Get started</span>
         </button>
         <div class="for-validity" id="validity"></div>
@@ -126,7 +127,7 @@
           internal or "organic" sources. Synergistically mesh quality quality
           vectors for one-to-one leadership.
         </div>
-        <button class="btn btn-second">
+        <button class="btn btn-second"  onClick="buttonClick(this)">
           <span class="btn-text text2">Explore our Story</span>
         </button>
       </div>
@@ -426,7 +427,7 @@
           Quickly predominate standards compliants architectures and prospective
           internal or "organic" sources.
         </div>
-        <button class="btn btn-third">
+        <button class="btn btn-third"  onClick="buttonClick(this)">
           <span class="btn-text text3">Explore Our Story</span>
         </button>
       </div>
@@ -639,9 +640,10 @@
         <div class="foot foot-4" id="foot4">
           <div class="foot-heads">Contact</div>
           <ul class="foot-link" id="contact-link">
-            <li><a href="#" id="phone">+8801622010442</a></li>
-            <li><a href="#" id="foot-email">info@restaurant.com</a></li>
-            <li><a href="#" id="place">Daudkandi, Comilla</a></li>
+            <li>+8801622010442</li>
+            <li><a href="mailto:info@restaurant.com?subject=Important" target="_blank" rel="noopener noreferrer" id="foot-email">info@restaurant.com</a>
+            </li>
+            <li>Daudkandi, Comilla</li>
           </ul>
         </div>
       </div>

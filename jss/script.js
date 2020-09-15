@@ -112,4 +112,12 @@ function subscribe(event) {
 emailBtn.addEventListener("click", validate);
 sub.addEventListener("click", subscribe);
 
+//for button toggle
+
+function buttonClick(element) {
+  console.log(element.classList)
+  element.classList.toggle('active');
+  console.log('add')
+}
+
 
