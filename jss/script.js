@@ -1,7 +1,6 @@
 const emailBtn = document.getElementById("btn-email");
 const subscribtion = document.getElementById("sub");
 
-
 //for hover in Why Choose us
 var reasonWrap = document.getElementsByClassName("reason-item");
 for (var i = 0; i < reasonWrap.length; i++) {
@@ -12,7 +11,6 @@ for (var i = 0; i < reasonWrap.length; i++) {
     while (el) {
       if (el.tagName === "DIV") {
         el.classList.remove("shadow");
-      
       }
       el = el.nextSibling;
     }
@@ -23,7 +21,7 @@ for (var i = 0; i < reasonWrap.length; i++) {
 //for hover in Menu
 
 var menuWrap = document.getElementsByClassName("ft");
-var foodWrap = document.getElementsByClassName("process-food")
+var foodWrap = document.getElementsByClassName("process-food");
 for (var i = 0; i < menuWrap.length; i++) {
   menuWrap[i].onmouseover = function () {
     //remove unactive one
@@ -32,13 +30,10 @@ for (var i = 0; i < menuWrap.length; i++) {
     while (el) {
       if (el.tagName === "DIV") {
         el.classList.remove("click");
-        
-       
       }
       el = el.nextSibling;
     }
     this.classList.add("click");
-
   };
 }
 // for (var i = 0; i < foodWrap.length; i++) {
@@ -50,7 +45,7 @@ for (var i = 0; i < menuWrap.length; i++) {
 //       console.log(el)
 //       if (el.tagName === "IMG") {
 //         el.classList.remove("clicked");
-       
+
 //       }
 //       el = el.nextSibling;
 //     }
@@ -59,7 +54,6 @@ for (var i = 0; i < menuWrap.length; i++) {
 // }
 
 //for icons
-
 
 // for responsive nav-bar
 function myFunction() {
@@ -115,9 +109,34 @@ sub.addEventListener("click", subscribe);
 //for button toggle
 
 function buttonClick(element) {
-  console.log(element.classList)
-  element.classList.toggle('active');
-  console.log('add')
+  console.log(element.classList);
+
+  textColor = element.children[0];
+  textColor.classList.toggle("btn-change");
+  element.classList.toggle('btn-click')
+  // if (textColor.classList.contains("btn-change")) {
+  //   element.style.background = " rgba(255,255,255)";
+  // }
+  // else{
+  //   element.style.background = " transparent linear-gradient(90deg, #8cb560 0%, #639d2b 100%)";
+  // }
+
+ 
+
 }
 
+const signIn = document.querySelector("#sign-in")
+const form = document.querySelector(".form-popup")
+const main = document.querySelector('.main-page')
 
+signIn.addEventListener('click',()=>
+{
+form.style.display = "block"
+main.style.opacity= "0.4"
+}
+
+)
+function closeForm() {
+  form.style.display = "none";
+  main.style.opacity = "1"
+}

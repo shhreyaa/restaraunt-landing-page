@@ -39,21 +39,21 @@
     <header>
       <nav class="nav">
         <div class="nav-bar">
-          <div class="navbar">
+          <div class="navbar1">
             <img src="/images/icon.png" alt="icon" class="img-icon" />
           </div>
           <div class="navbar nav2" id="navbar">
             <ul id="nav-element">
-              <li class="nav-item item1" id="home"><a href="#">Home</a></li>
-              <li class="nav-item item2" id="menu"><a href="#">Menu</a></li>
-              <li class="nav-item item3" id="service">
-                <a href="#">Service</a>
+              <li class="nav-item item1" id="home-nac"><a href="#home" >Home</a></li>
+              <li class="nav-item item2" id="menu-nav"><a href="#menu">Menu</a></li>
+              <li class="nav-item item3" id="service-nav">
+                <a href="#service">Service</a>
               </li>
               <li class="nav-item item4" id="sign-in">
-                <a href="#">Sign-In</a>
+                <a href="#sign">Sign-In</a>
               </li>
               <li class="nav-item item5" id="shop">
-                <a href="#">
+                <a href="#shop">
                   <img
                     src="/images/shop.png"
                     alt="shopping"
@@ -75,7 +75,8 @@
         </div>
       </nav>
     </header>
-    <div class="main-body">
+    <div class="main-page">
+    <div class="main-body" id="home">
       <div class="body-element partA">
         <div class="main-text">
           All in Good Taste
@@ -128,11 +129,11 @@
           vectors for one-to-one leadership.
         </div>
         <button class="btn btn-second"  onClick="buttonClick(this)">
-          <span class="btn-text text2">Explore our Story</span>
+          <span class="btn-text text2" id="service">Explore our Story</span>
         </button>
       </div>
     </div>
-    <div class="reason">
+    <div class="reason" >
       <div class="reason-heading" id="reason-heading">Reasons</div>
       <div class="why-choose" id="why-choose">Why choose us?</div>
       <img src="/images/leaf2.png" alt="leaf" class="leaf2" id="leaf2" />
@@ -184,7 +185,8 @@
         </div>
       </div>
     </div>
-    <div class="browse">
+ 
+    <div class="browse" id="menu">
       <div class="reason-heading" id="browse-heading">Browse</div>
       <div class="why-choose" id="explore">Expore Our Menu</div>
       <img src="/images/leaf3.png" alt="leaf" class="leaf3" id="leaf3" />
@@ -264,7 +266,7 @@
                 class="process-food"
                 id="chicken"
               />
-              <div class="icon-click">
+              <!-- <div class="icon-click">
                 <a href="#">
                   <div class="rect heart-div">
                     <i class="far fa-heart" id="fa-heart"></i>
@@ -275,7 +277,7 @@
                     <i class="fas fa-shopping-bag"></i>
                   </div>
                 </a>
-              </div>
+              </div> -->
             </div>
             <div class="list-heading">Western Sunrise</div>
 
@@ -648,6 +650,22 @@
         </div>
       </div>
     </footer>
+    </div>
+<!-- for pop-up form -->
+    <div class="form-popup" id="myForm">
+      <form action="" class="form-container">
+        <h1>Login</h1>
+    
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email" >
+    
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="password" >
+    
+        <button type="submit" class="btne">Login</button>
+        <button type="submit" class=" btne cancel" onclick="closeForm()" id="cancel">Close</button>
+      </form>
+    </div>
     <script src="/jss/script.js"></script>
     <script src="/jss/jquery.min.js"></script>
     <script src="/jss/jquery.bxslider.min.js"></script>

@@ -1,36 +1,42 @@
 * {
   margin: 0px;
   padding: 0px;
+  
   /* border: 1px solid red; */
+}
+html {
+  scroll-behavior: smooth;
 }
 body {
   background: transparent
     linear-gradient(158deg, #f8fbf5 0%, #f9fcf7 15%, #ffffff 59%, #ffffff 100%)
     0% 0% no-repeat padding-box;
-    overflow-x:hidden;
+  overflow-x: hidden;
+ 
 }
 
 
 .nav-bar {
+ 
   width: 100%;
-   background: transparent
+  background: transparent
     linear-gradient(158deg, #f8fbf5 0%, #f9fcf7 15%, #ffffff 59%, #ffffff 100%)
     0% 0% no-repeat padding-box;
 
-  
   padding: 35px 20%;
 
-z-index: 3;
+  z-index: 3;
   top: 0px;
- position: fixed;
- display: flex;
-justify-content: space-evenly;
+  position: fixed;
+  display: flex;
+  justify-content: space-evenly;
 }
-.nav2{
-  width: 100%;
+
+.nav2 {
+ 
   top: 30px;
   margin-left: 30%;
- justify-content: space-evenly;
+  justify-content: space-evenly;
   width: 100%;
 }
 
@@ -39,13 +45,12 @@ ul {
 }
 
 .img-icon {
-  position: relative;
-  width: 180%;
  
+  width: 180%;
 }
 #nav-element a {
   position: relative;
- 
+
   color: #8d8d8d;
 }
 #nav-element a:hover {
@@ -67,19 +72,18 @@ ul {
   display: inline;
 }
 /* responsive */
-.cart{
- position: absolute;
- width: 100%;
- margin: 0px 0px;
- 
-    margin: 40px -24px;
-    font-size: 13px;
-  visibility:hidden;
+.cart {
+  position: absolute;
+  width: 300px;
+  margin: 0px 0px;
+
+  margin: 40px -24px;
+  font-size: 13px;
+  visibility: hidden;
 }
 #shop:hover .cart {
-visibility:visible;
+  visibility: visible;
 }
-
 
 .navbar .icon-2x {
   display: none;
@@ -122,6 +126,7 @@ visibility:visible;
   letter-spacing: 0px;
   color: red;
   opacity: 1;
+  margin: 7px;
 }
 #validity {
   text-align: left;
@@ -153,7 +158,7 @@ visibility:visible;
 }
 input::placeholder {
   position: relative;
-  
+
   text-align: left;
   font-weight: 300;
   font-size: 17px;
@@ -163,9 +168,9 @@ input::placeholder {
   color: #b7b7b7;
   opacity: 1;
 }
- input{
-    padding: 0px 15px;
-  }
+input {
+  padding: 0px 15px;
+}
 .btn {
   background: transparent linear-gradient(90deg, #8cb560 0%, #639d2b 100%) 0% 0%
     no-repeat padding-box;
@@ -179,12 +184,7 @@ input::placeholder {
   width: 25%;
   height: 50px;
 }
-//for toggle
-.active{
-  border: 5px solid red;
-background-color: white;
-color: #639d2b ;
-}
+
 .btn-text {
   text-align: left;
   font-weight: 500;
@@ -661,7 +661,7 @@ p {
 }
 .person-pic {
   position: relative;
-  left: 9%;
+  left: 14%;
   top: -20px;
   width: 15%;
 }
@@ -672,7 +672,7 @@ p {
   font-weight: 500;
   font-size: 16px;
   width: 100%;
-  left: 13%;
+  left: 17%;
   top: -47px;
 }
 .position {
@@ -684,7 +684,7 @@ p {
   line-height: 24px;
   font-size: 14px;
   width: 70%;
-  left: 29%;
+  left: 33%;
   top: -47px;
 }
 .leaf5 {
@@ -794,8 +794,14 @@ p {
   color: #ffffff;
 }
 
-.heart-div,.shop-div { transition: all .2s ease-in-out; }
-.heart-div:hover ,.shop-div:hover{ transform: scale(1.2); }
+.heart-div,
+.shop-div {
+  transition: all 0.2s ease-in-out;
+}
+.heart-div:hover,
+.shop-div:hover {
+  transform: scale(1.2);
+}
 .footer {
   position: relative;
   background-color: #f8fbf5;
@@ -858,7 +864,8 @@ button {
   font-weight: 600;
   line-height: 48px;
 }
-.foot-link a,.foot-link li {
+.foot-link a,
+.foot-link li {
   font-family: "Josefin Sans", "sans-serif";
   color: #585858;
   font-weight: 400;
@@ -953,7 +960,6 @@ label i.em {
   }
 }
 @media only screen and (max-width: 1450px) {
- 
   .main-body,
   .reason,
   .browse,
@@ -966,14 +972,11 @@ label i.em {
     margin-right: 10%;
   }
   .nav-bar {
-
-  padding: 25px 10%;
+    padding: 25px 10%;
   }
-  .nav2{
- 
-  margin-left: 40%;
-
-}
+  .nav2 {
+    margin-left: 40%;
+  }
   .testimonial-wrapper {
     grid-template-columns: 35% 35% 37%;
   }
@@ -982,7 +985,6 @@ label i.em {
   }
 }
 @media only screen and (max-width: 1150px) {
- 
   .main-text {
     font-size: 49px;
   }
@@ -1012,7 +1014,6 @@ label i.em {
   }
 }
 @media only screen and (max-width: 1000px) {
-  
   .main-body,
   .reason,
   .browse,
@@ -1068,21 +1069,19 @@ label i.em {
   .main-body {
     top: 150px;
   }
+ 
   .main-text {
     font-size: 34px;
   }
 
   #nav-element li {
     position: relative;
-   
   }
   .shop {
     width: 4.5%;
   }
- 
-  input::placeholder {
-    
 
+  input::placeholder {
     font-size: 14px;
   }
   .btn-text {
@@ -1152,6 +1151,9 @@ label i.em {
   .position {
     top: -35px;
     font-size: 12px;
+  }
+  .nav-bar {
+  width: 100%;
   }
 }
 @media only screen and (max-width: 650px) {
@@ -1229,6 +1231,8 @@ label i.em {
   .news-wrapper {
     display: block;
   }
+  
+  
   .newsDes {
     height: 486px;
   }
@@ -1248,7 +1252,7 @@ label i.em {
   .foot-4 {
     height: 250px;
   }
-  
+
   .rect-div {
     display: flex;
     align-items: center;
@@ -1269,34 +1273,59 @@ label i.em {
     display: none;
   }
   .navbar a.icon-2x {
+    position: absolute;
     color: #2c3722;
-    position: relative;
-    top: -10px;
-    float: right;
-font-size: 25px;
-margin-right: 40%;
+   
+    top: 50px;
+
+    font-size: 30px;
+  
     display: block;
   }
   .navbar.responsive {
     position: relative;
+    padding: 30px;
+    
+    
+    
   }
-  .navbar.responsive a.icon-2x {
-    position: absolute;
+  .cart {
+  position: absolute;
+  top: 15px;
+  left: 50px;
+ width: 200px;
+  }
+  .nav-bar{
 
-    right: 0;
-    top: 0;
+    width: 70%;
+  }
+  
+  #shop{
+    width: 30%;
+  }
+ 
+  .navbar.responsive a.icon-2x {
+    float: right;
+    position: absolute;
+margin-bottom: 5px;
+  
+    top: 50;
   }
   .navbar.responsive a {
+   position: relative;
     float: none;
     display: block;
-
+top: 25px;
     text-align: left;
+ 
   }
+ 
+ 
+ 
+ 
 }
 @media only screen and (max-width: 500px) {
-  .img-icon {
-    width: 83%;
-  }
+  
   .main-text {
     font-size: 30px;
   }
@@ -1362,21 +1391,18 @@ margin-right: 40%;
   height: 32px;
   display: inline-block;
   left: 20%;
-
 }
 .rating__star {
   width: 100%;
   height: 100%;
   fill: #fff;
- 
 }
 
 /*intial hover state*/
 .rating:hover .rating__star,
 /*preserve state after rating the first time*/
 .rating.has--rating .rating__star {
-  fill: #ffb243
-
+  fill: #ffb243;
 }
 
 /*intial hover state*/
@@ -1424,6 +1450,88 @@ margin-right: 40%;
   .rating__star {
   fill: #fff;
 }
-button{
-  cursor:pointer
+button {
+  cursor: pointer;
+}
+
+/* for toggle */
+.btn-click{
+    
+ background: #f9fcf7;
+}
+
+.btn-change{
+
+   color: #639d2b;
+}
+/* pop-up form styling */
+{box-sizing: border-box;}
+
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btne {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+#cancel  {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btne:hover, .open-button:hover {
+  opacity: 1;
 }
